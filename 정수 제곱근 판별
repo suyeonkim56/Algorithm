@@ -1,0 +1,16 @@
+class Solution {
+    public long solution(long n) {
+        long answer = 0; //long은 64비트 정수임
+        double sqrt = Math.sqrt(n);
+        if(sqrt == (long)sqrt)
+        {
+            sqrt+=1;
+            answer = (long)(sqrt * sqrt);
+        }
+        else
+        {
+            answer = -1;
+        }
+        return answer;
+    }
+}
